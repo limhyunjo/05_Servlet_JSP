@@ -11,10 +11,44 @@
     <!--  피자 주문 요청 -> 영수증 응답 --> 
       <form action="/ex3" method="get">
 
+      <h3>피자 주문하기</h3>
 
+       피자 선택 : 
 
-
+       <select name="pizza">
+        <option value="맥콘 베이컨"> 맥콘 베이컨 (15900) </option>
+        <option value="클래식 리코타"> 클래식 리코타 (16900) </option>
+        <option value="마라 불고기"> 마라 불고기 (17900) </option>
+        <option value="맵퍼로니"> 맵퍼로니 (17900) </option>
+       </select>
         
+      <br>
+       오리지널 도우/ 씬도우 :
+        
+       오리지널 <input type="radio" name="type" value="original">
+       /
+       씬도우 (+2000)<input type="radio" name="type" value="thin">
+
+       <br>
+
+       기타 옵션 : <br>
+      
+       <input type="checkbox" name="opt" value="콜라">
+       콜라 추가(+2000)
+       <br>
+       <input type="checkbox" name="opt" value="파스타">
+        파스타 추가(+9800)
+       <br>
+       <input type="checkbox" name="opt" value="핫윙">
+       핫 윙 추가(+9800)
+       <br>
+
+        주문자명 : <input type="text" name="ordererName">
+        주소 : <input type="text" name="ordererAddress" size ="50"> <br>
+
+        <button>주문하기</button>
+     
+
       </form>
 
 </body>
