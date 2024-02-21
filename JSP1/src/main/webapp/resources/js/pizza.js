@@ -1,0 +1,1 @@
+console.log("pizza.js파일이 요청됨")
